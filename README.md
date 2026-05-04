@@ -14,7 +14,7 @@ GlowLens is a modern, web-based AI assistant designed to provide personalized de
 - **Frontend:** HTML5, Vanilla JavaScript, CSS3 (Custom Glassmorphism styling)
 - **Backend:** Node.js, Express.js
 - **File Uploads:** Multer (in-memory storage)
-- **AI Integration:** `@google/generative-ai` (Gemini 2.5 Flash / Gemini Vision)
+- **AI Integration:** Google Gemini API (Vision & Chat)
 
 ## 🚀 Getting Started
 
@@ -33,9 +33,9 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Create a `.env` file in the root directory of the project and add your Gemini API key:
+Create a `.env` file in the root directory and add your credentials:
 ```env
-GEMINI_API_KEY=your_google_gemini_api_key_here
+GEMINI_API_KEY=your_api_key_here
 PORT=3000
 ```
 

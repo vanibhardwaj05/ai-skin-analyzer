@@ -1,13 +1,13 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const apiKey = process.env.GEMINI_API_KEY;
-const primaryModelName = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-const fallbackModelNames = ["gemini-2.0-flash", "gemini-flash-latest", "gemini-2.0-flash-lite"];
+const primaryModelName = process.env.GEMINI_MODEL || "gemini-1.5-flash"; 
+const fallbackModelNames = ["gemini-1.5-flash-latest", "gemini-2.0-flash-exp"];
 const modelNames = [primaryModelName, ...fallbackModelNames]
     .filter((modelName, index, models) => modelName && models.indexOf(modelName) === index);
 
 if (!apiKey) {
-    console.warn("GEMINI_API_KEY is not configured. Gemini requests will fail until it is set.");
+    console.warn("GEMINI_API_KEY is not configured in .env. Requests will fail.");
 }
 
 // Initialize GoogleGenerativeAI with your API key.
