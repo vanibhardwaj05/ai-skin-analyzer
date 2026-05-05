@@ -49,12 +49,9 @@ commit_date "2026-05-01T10:00:00" "Enhance frontend interactive logic" "--allow-
 
 commit_date "2026-05-01T15:00:00" "Implement modern glassmorphism aesthetic" "--allow-empty"
 
+
 # Commits 13-15: Day 7 (2026-05-02)
 commit_date "2026-05-02T11:00:00" "Rebrand application to GlowLens" "--allow-empty"
-
-echo "GEMINI_API_KEY=your_google_gemini_api_key_here\nPORT=3000" > .env.example
-git add .env.example
-commit_date "2026-05-02T16:00:00" "Add environment variable configuration" ""
 
 git add README.md
 git add .
